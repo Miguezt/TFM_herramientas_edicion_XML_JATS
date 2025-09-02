@@ -1,0 +1,338 @@
+
+/* -------------------------------------------------------------
+   Estilos generales del body
+------------------------------------------------------------- */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+               Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1em 3em;
+  text-wrap: auto;
+  hyphens: auto;
+}
+
+/* -------------------------------------------------------------
+   Párrafos
+------------------------------------------------------------- */
+p {
+  color: #000000;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: none;
+}
+
+/* -------------------------------------------------------------
+   Encabezados
+------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  color: #cf003d;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  background: transparent;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
+h6 { font-size: 1.05em; }
+
+h1.title {
+  text-align: center;
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: 0.5rem;
+}
+
+/* -------------------------------------------------------------
+   Citas en bloque
+------------------------------------------------------------- */
+
+blockquote {
+  margin: 1em;
+  padding: 0.5em 1em;
+  border-left: 2px solid #cf003d;
+  background-color: #f2f2f2;
+}
+
+/* -------------------------------------------------------------
+   Ejemplos lingüística
+------------------------------------------------------------- */
+
+.boxed-text {
+  border-left: 2px solid #cf003d;
+  background-color: #f2f2f2;
+  margin: 1em;
+  padding: 0.5em 1em;
+}
+
+.unstyled-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------
+   Glosario o listas de definiciones
+------------------------------------------------------------- */
+
+dl {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 2px solid #cf003d;
+  background-color: #f9f9f9;
+}
+
+dt {
+  font-weight: bold;
+  margin-top: 0.5em;
+  color: #000;
+}
+
+dd {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+  font-style: italic;
+  color: #444;
+}
+
+/* -------------------------------------------------------------
+   Figuras y leyendas
+------------------------------------------------------------- */
+
+figure {
+  margin: 1em auto; 
+  width: 65%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  text-align: center;
+  color: #cf003d;
+  margin-top: 0.5em;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------
+   Tablas
+------------------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+thead th {
+  font-weight: bold;
+  text-align: center;
+}
+
+th, td {
+  border: 1px solid #999;
+  text-align: left;
+  padding: 0.5em;
+}
+
+caption {
+  color: #cf003d;
+}
+
+/* -------------------------------------------------------------
+   Estilos para enlaces
+------------------------------------------------------------- */
+a {
+  color: #004b8d;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #002b5c;
+}
+
+/* -------------------------------------------------------------
+   Cabecera editorial (según maqueta)
+------------------------------------------------------------- */
+.cabeceraEditorial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0;
+}
+
+/* -------------------------------------------------------------
+   Cabecera revista (según maqueta)
+------------------------------------------------------------- */
+
+.cabeceraRevista {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.revista-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.revista-info a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.tipo-publicacion p {
+  margin: 0;
+  color: #444;
+}
+
+.revista-info .issn {
+  margin-top: 0;
+  font-size: 0.85em;
+  color: #555;
+}
+
+.doi-fecha {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  color: #444;
+  margin-bottom: 1em;
+}
+
+.doi-fecha a {
+  color: #444;
+  text-decoration: none;
+}
+
+.doi-fecha a:hover {
+  text-decoration: underline;
+}
+
+.fecha {
+  white-space: nowrap;
+}
+
+/* -------------------------------------------------------------
+   Datos del paper (bloque informativo)
+------------------------------------------------------------- */
+
+.datospaper {
+  background-color: #f3f3f3;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+  border-radius: 6px;
+  color: #222;
+}
+
+.datospaper p {
+  margin: 0.5em 0;
+}
+
+.datospaper strong {
+  font-weight: 600;
+}
+
+.datospaper u {
+  text-decoration: none;
+  font-style: italic;
+  color: #333;
+}
+
+.datospaper a {
+  color: #00558c;
+  text-decoration: none;
+}
+
+.datospaper a:hover {
+  text-decoration: underline;
+}
+
+/* Iconos de afiliación */
+.afiliacion-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icono {
+  height: 16px;
+}
+
+/* -------------------------------------------------------------
+   Logotipos y licencias
+------------------------------------------------------------- */
+.logoEditorial img {
+  height: 30px;
+}
+
+.creativeCommons img {
+  height: 20px;
+}
+
+/* Basado en patrones comunes de responsive: scroll horizontal en tablas para móviles */
+
+@media (max-width: 768px) {
+  body {
+    inline-size: 100%;
+    padding-block: 1em;
+    padding-inline: 1em;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    margin-block: 0;
+    margin-inline: 0;
+    -webkit-overflow-scrolling: touch; /* suaviza scroll en iOS */
+  }
+
+  :where(th, td) {
+    padding-block: 0.5em;
+    padding-inline: 0.5em;
+  }
+}
+
+/* -------------------------------------------------------------
+   Enlaces y navegación por teclado (accesibilidad)
+------------------------------------------------------------- */
+
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid #004b8d;
+  outline-offset: 2px;
+}
+
+/*!
+
+ * Basado en estilos iniciales de:
+ * https://codeberg.org/revistaribes/css_html_galleys
+ * Licencia MIT, Copyright (c) 2025 revista_ribes [Revista Ribes]
+ * Este código ha sido modificado y ampliado por (c) 2025 Ediciones Complutense.
+ */ 
